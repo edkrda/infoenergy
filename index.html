@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="InfoEnergy - Dashboard em Java para visualização e análise de dados energéticos, com foco em energia solar e oportunidades comerciais." />
+  <title>InfoEnergy | Dashboard de Dados Energéticos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a class="logo" href="#inicio" aria-label="Página inicial InfoEnergy">⚡ InfoEnergy</a>
+      <nav class="nav-links" aria-label="Menu principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#problema">Problema</a>
+        <a href="#solucao">Solução</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#tecnologias">Tecnologias</a>
+        <a href="index2.html" class="nav-pill">Planos</a>
+      </nav>
+      <a class="btn btn-outline" href="#contato">Solicitar demonstração</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="eyebrow">Dashboard de dados energéticos</span>
+          <h1>Transforme dados de energia solar em oportunidades de mercado.</h1>
+          <p>
+            O InfoEnergy organiza dados energéticos em uma dashboard desenvolvida em Java,
+            ajudando empresas, técnicos e profissionais de manutenção a identificar regiões
+            com maior potencial para limpeza, renovação e prospecção de clientes solares.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#solucao">Conhecer a solução</a>
+            <a class="btn btn-secondary" href="#recursos">Ver funcionalidades</a>
+          </div>
+
+          <div class="trust-row" aria-label="Fontes de dados utilizadas">
+            <span>Fontes consideradas:</span>
+            <strong>ANEEL</strong>
+            <strong>EPE</strong>
+            <strong>IBGE</strong>
+          </div>
+        </div>
+
+        <aside class="dashboard-preview" aria-label="Prévia visual da dashboard InfoEnergy">
+          <div class="preview-top">
+            <span></span><span></span><span></span>
+            <strong>InfoEnergy Dashboard</strong>
+          </div>
+          <div class="preview-filter">
+            <div><small>Região</small><b>Sudeste</b></div>
+            <div><small>Fonte</small><b>Solar</b></div>
+            <div><small>Período</small><b>2020–2026</b></div>
+          </div>
+          <div class="preview-kpis">
+            <article><small>Estado líder</small><b>SP</b><span>Maior concentração</span></article>
+            <article><small>Oportunidade</small><b>Alta</b><span>Manutenção e limpeza</span></article>
+          </div>
+          <div class="bar-chart" aria-hidden="true">
+            <i style="height: 38%"></i>
+            <i style="height: 56%"></i>
+            <i style="height: 44%"></i>
+            <i style="height: 72%"></i>
+            <i style="height: 88%"></i>
+            <i style="height: 64%"></i>
+          </div>
+          <div class="map-card">
+            <div class="map-dot dot-1"></div>
+            <div class="map-dot dot-2"></div>
+            <div class="map-dot dot-3"></div>
+            <p>Mapa de calor por região</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container split">
+        <div>
+          <span class="section-label">Sobre o projeto</span>
+          <h2>Uma solução acadêmica voltada à análise prática do setor solar.</h2>
+        </div>
+        <p class="lead align-left">
+          O projeto InfoEnergy foi criado para transformar bases energéticas em informações visuais e úteis.
+          A proposta atende principalmente profissionais e empresas que atuam com energia solar e precisam
+          localizar regiões com maior concentração de sistemas fotovoltaicos, possíveis clientes com painéis antigos
+          e oportunidades para serviços de manutenção, limpeza e renovação.
+        </p>
+      </div>
+    </section>
+
+    <section id="problema" class="section section-carded">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-label">Problema identificado</span>
+          <h2>Dados existem, mas nem sempre estão prontos para apoiar decisões.</h2>
+          <p>
+            A persona do projeto depende de dados para decidir onde atuar, mas muitas informações ficam dispersas,
+            técnicas ou difíceis de interpretar sem tratamento prévio.
+          </p>
+        </div>
+
+        <div class="cards-grid three">
+          <article class="info-card">
+            <span>01</span>
+            <h3>Dados dispersos</h3>
+            <p>Informações de geração, regiões e crescimento solar ficam em fontes diferentes, dificultando uma visão única do mercado.</p>
+          </article>
+          <article class="info-card">
+            <span>02</span>
+            <h3>Dificuldade de prospecção</h3>
+            <p>Profissionais de painéis solares muitas vezes dependem de indicação ou experiência prática para encontrar clientes.</p>
+          </article>
+          <article class="info-card">
+            <span>03</span>
+            <h3>Baixa visualização</h3>
+            <p>Planilhas e bases brutas dificultam enxergar regiões líderes, tendências e áreas com maior potencial de atuação.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="solucao" class="section">
+      <div class="container solution-grid">
+        <div class="solution-card">
+          <span class="section-label">Solução</span>
+          <h2>Dashboard em Java com filtros, indicadores e visualizações energéticas.</h2>
+          <p>
+            O InfoEnergy centraliza a consulta de dados em uma interface clara, permitindo visualizar indicadores por estado,
+            região, fonte energética e período. O sistema foi estruturado com banco de dados SQL Server e classes de controle
+            para organizar as regras de negócio.
+          </p>
+          <ul class="check-list">
+            <li>Identificação de regiões com maior potencial solar.</li>
+            <li>Comparação entre estados e fontes energéticas.</li>
+            <li>Consulta de dados por filtros selecionados pelo usuário.</li>
+            <li>Geração de gráficos e rankings para tomada de decisão.</li>
+          </ul>
+        </div>
+
+        <div class="persona-card">
+          <h3>Para quem é o InfoEnergy?</h3>
+          <div class="persona-item">
+            <b>Empresas de energia solar</b>
+            <p>Podem analisar regiões para expansão comercial e prospecção.</p>
+          </div>
+          <div class="persona-item">
+            <b>Técnicos de manutenção</b>
+            <p>Podem localizar áreas com maior concentração de sistemas solares.</p>
+          </div>
+          <div class="persona-item">
+            <b>Profissionais de limpeza de painéis</b>
+            <p>Podem planejar rotas e identificar potenciais clientes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recursos" class="section section-carded">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-label">Funcionalidades</span>
+          <h2>Recursos principais do MVP</h2>
+          <p>O escopo inicial prioriza as funcionalidades essenciais para transformar dados em análise visual.</p>
+        </div>
+
+        <div class="cards-grid two">
+          <article class="feature-card">
+            <div class="icon">📊</div>
+            <h3>Dashboard energética</h3>
+            <p>Apresenta indicadores principais, gráficos e informações resumidas sobre geração e concentração de energia.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">🔎</div>
+            <h3>Filtros de consulta</h3>
+            <p>Permite selecionar estado, região, período e tipo de energia para refinar a análise.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">🗺️</div>
+            <h3>Mapa de calor por região</h3>
+            <p>Destaca áreas com maior concentração ou crescimento, ajudando a encontrar oportunidades comerciais.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">📈</div>
+            <h3>Evolução anual</h3>
+            <p>Mostra a evolução dos dados ao longo dos anos para comparar tendências e crescimento por localidade.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">🏆</div>
+            <h3>Ranking de estados</h3>
+            <p>Organiza os estados com melhor desempenho, facilitando decisões estratégicas.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">📄</div>
+            <h3>Relatórios futuros</h3>
+            <p>Estrutura preparada para futuras exportações e relatórios com base nos filtros selecionados.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="processo" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-label">Como funciona</span>
+          <h2>Do dado bruto à decisão visual</h2>
+        </div>
+
+        <div class="timeline">
+          <article>
+            <span>1</span>
+            <h3>Coleta de dados</h3>
+            <p>Dados públicos e informações energéticas são levantados a partir de fontes institucionais.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Organização no banco</h3>
+            <p>As informações são estruturadas em SQL Server para permitir consultas por filtros.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Processamento</h3>
+            <p>As classes de controle validam filtros, consultam os dados e organizam os resultados.</p>
+          </article>
+          <article>
+            <span>4</span>
+            <h3>Visualização</h3>
+            <p>A dashboard em Java apresenta gráficos, indicadores, rankings e comparações.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tecnologias" class="section section-carded">
+      <div class="container tech-wrap">
+        <div>
+          <span class="section-label">Tecnologias e modelagem</span>
+          <h2>Estrutura pensada para manutenção e evolução.</h2>
+          <p>
+            O projeto foi organizado com separação entre interface, regras de negócio e banco de dados.
+            Essa divisão facilita ajustes, testes e futuras melhorias do MVP.
+          </p>
+        </div>
+
+        <div class="tech-grid">
+          <article><b>Java</b><span>Dashboard e regras principais</span></article>
+          <article><b>SQL Server</b><span>Armazenamento relacional dos dados</span></article>
+          <article><b>UML</b><span>Diagrama de classes e modelagem técnica</span></article>
+          <article><b>Trello</b><span>Registro e acompanhamento das tarefas</span></article>
+          <article><b>GitHub</b><span>Controle de versão do projeto</span></article>
+          <article><b>Fontes públicas</b><span>ANEEL, EPE e IBGE</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section cta-section">
+      <div class="container cta-card">
+        <span class="section-label">Demonstração</span>
+        <h2>Quer visualizar o potencial do InfoEnergy?</h2>
+        <p>
+          Acesse a apresentação do MVP e veja como a dashboard pode apoiar decisões no setor solar.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:infoenergy@gmail.com">Entrar em contato</a>
+          <a class="btn btn-secondary" href="index2.html">Ver planos</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div class="footer-brand">
+        <a class="logo" href="#inicio">⚡ InfoEnergy</a>
+        <p>Dashboard para análise de dados energéticos e identificação de oportunidades no setor solar.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <a href="#sobre">Sobre</a>
+        <a href="#problema">Problema</a>
+        <a href="#solucao">Solução</a>
+        <a href="#recursos">Recursos</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <p>infoenergy@gmail.com</p>
+        <p>Sorocaba, SP — Brasil</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 InfoEnergy. Projeto acadêmico desenvolvido para UPX.</p>
+    </div>
+  </footer>
+</body>
+</html>
